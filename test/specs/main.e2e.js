@@ -9,7 +9,7 @@ describe('Main Page', () => {
         await console.log('TESTING TESTING TESTING TESTING TESTIGNG');
         await console.log(listExamples.length);
 
-        await expect(listExamples).toBeElementsArrayOfSize(122);
+        await expect(listExamples).toBeElementsArrayOfSize(44);
         
     });
 });
