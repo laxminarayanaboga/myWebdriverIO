@@ -3,8 +3,6 @@ const SecurePage = require('../pageobjects/secure.page');
 
 describe('My Login application', () => {
 
-   
-
     it('should login with valid credentials', async () => {
         await LoginPage.open();
 
@@ -21,17 +19,6 @@ describe('My Login application', () => {
         await expect(SecurePage.flashAlert).toHaveTextContaining('You logged out of the secure area!');
 
     });
-
-    it('Verify list items',() => {
-        browser.url('/');
-
-        const listItems = $$("ul li");
-
-        expect(listItems).toBeElementsArrayOfSize(33);
-
-
-    });
-  
 
 });
 
