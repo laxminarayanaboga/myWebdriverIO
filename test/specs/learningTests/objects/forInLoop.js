@@ -49,4 +49,14 @@ describe('for in loop examples', () => {
         }
         expect(total).toEqual(60);
     });
+
+    it('for each loop in arrays', () => {
+        let items = [10, 20, 30];
+        let total = 0;
+
+        for (let item of items) {
+            total = total + item;
+        }
+        expect(total).toEqual(60);
+    });
 })
